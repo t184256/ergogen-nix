@@ -1,9 +1,9 @@
-{ lib, buildNpmPackage, nodejs_18, fetchFromGitHub }:
+{ lib, buildNpmPackage, nodejs_20, fetchFromGitHub }:
 
 buildNpmPackage rec {
   pname = "ergogen";
   version = "4.1.0";
-  nodejs = nodejs_18;
+  nodejs = nodejs_20;
 
   src = fetchFromGitHub {
     owner = "ergogen";

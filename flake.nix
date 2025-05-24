@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }: 
+  outputs = { self, nixpkgs, flake-utils }:
     let
       getPkgs = pkgs: { ergogen = pkgs.callPackage ./default.nix { }; };
     in
